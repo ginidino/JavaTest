@@ -10,12 +10,12 @@ public class arrCoinTest {
 			System.out.print("Enter the money: ");
 			price = Integer.parseInt(reader.nextLine());
 			if(price > 1000000) {
-                System.out.println("Enter the money less than 1,000,000₩");
-            } else if(price < 100) {
-                System.out.println("Enter the money more than 100₩");
-            } else {
-                break;
-            }
+                	System.out.println("Enter the money less than 1,000,000₩");
+            		} else if(price < 100) {
+                		System.out.println("Enter the money more than 100₩");
+            		} else {
+               		 	break;
+            		}
 		}
 		int[] coin = {10000, 5000, 1000, 500, 100, 50, 10};
 		int[] MaxNum = {5, 5, 5, 5, 5, 5, 5};
