@@ -84,3 +84,4 @@ public class Grade2 {
         System.out.println("Acceptance percentage: " + accepted);
 	}
 }
+// first project version
