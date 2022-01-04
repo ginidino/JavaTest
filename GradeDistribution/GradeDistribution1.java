@@ -47,3 +47,4 @@ public class GradeDistribution1 {
 		System.out.println("Acceptance percentage:" + accepted + "%");
 	}
 }
+// second version of Grade Distribution 
