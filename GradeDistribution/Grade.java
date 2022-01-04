@@ -85,3 +85,4 @@ public class Grade {
         System.out.println("Acceptance percentage: " + accepted);
 	}
 }
+//first version of Grade Distribution 
