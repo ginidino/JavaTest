@@ -1,0 +1,12 @@
+▶︎ Searching(탐색)
+- List 안에서 원하는 원소를 찾는 algorithm
+- Linear Search(선형 탐색) : 처음부터 모든 원소를 방문하는 탐색 방법 - list가 정렬되어 있지 않은 경우 사용
+- Binary Search(이진 탐색) : List가 정렬되어 있는 경우 중간에 있는 원소(m)와 먼저 비교하여, 크면 그 다음부터 (m+1) 터 끝까지 비교하고, 작으면 처음부터 그전 (m-1)까지의 원소들과 비교하는 방식을 반복하여 하나의 리스트를 계속해서 두개의 리스트로 분할한다. 이 방법은 리스트에 하나의 원소가 남을 때까지 반복된다. Binary Search는 문제의 크기가 반으로 줄일 수 있기 때문에 Linear Search보다 효율적이다.
+- Collections class는 정렬된 list에서 지정된 원소를 Binary Search한다.
+- Binary Search method인 binarySearch()는 만약 반환값이 양수이면 찾고자 하는 원소의 index값이고, 음수이면 탐색이 실패한것 즉 원소를 잦지 못했음을 의미
+int index = Collections.binarySearch(list, element);
+// list는 리스트, element는 탐색할 원소이다.
+단, binarySearch() method는 실패하더라도 도움이 되는 정보를 반환. 즉, 봔환값에는 현재의 데이터가 삽입도리 수 있는 위치 정보가 있다. 반환값이 pos라고 한다면, (-pos-1)이 해당 데이터를 삽입할 수 있는 위치이다
+int pos = Collections.binarySearch(list, key);
+if(pos < 0) list.add(-pos-1);
+- binarySearch() method는 위에도 언급했듯이 “정렬된 리스트”에 한해서 탐색을 진행한다는 점에 주의
