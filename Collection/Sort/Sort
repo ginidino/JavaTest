@@ -1,0 +1,30 @@
+Collection Class
+
+- Collections class는 여러 유용한 알고리즘을 구현한 method를 제공
+- 이 method들은 generic 기술을 사용하여 작성되었으며, 정적 method의 형태
+- 자주 사용되는 algorithm은 Sorting(정렬), Shuffling(섞기), Searching(탐색) 
+ •언급한 세 method의 첫 번째 매개변수는 algorithm이 적용되는 Collections
+
+▶︎ Sorting(정렬)
+- Data를 어떤 기준에 의하여 순서대로 나열하는 algorithm
+- 퀵 정렬, 합병 정렬, 히프 정렬 등의 다양한 방법이 존재
+- Collections class의 정렬은 속도가 비교적 빠르고 안전성이 보장되는 합병 정렬을 이용
+- 안전성이란 동일한 값을 가지는 원소를 다시 정렬하지 않는 것을 의미
+- 안정성은 같은 list를 반복하여 다른 기준에 따라 정렬할 때 중요
+ ex)
+상품 주문 리스트를 날짜를 기준으로 먼저 정렬하고 이후 주문처를 기준으로 정렬한다면 사용자는 같은 주문처가 보낸 주문은 날짜별로 정렬될 것이라고 가정. 
+이처럼 한번 정렬된 것이 유지되는 경우를 안정성이 있는 정렬
+- Collections class의 sort() 메소드는 정적 method로, List interface를 구현하는 Collections에 대하여 정렬을 수행
+
+List<String> list = new LinkedList<String>();
+list.add(“김철수”);
+list.add(“김영희”);
+Collections.sort(list);
+위의 경우는 원소가 String type이므로 앞파벳 순서대로 정렬된것
+원소가 Data type이라면 시간적인 순서로 정렬될 것. 그 이유는 String class와 Data class 모두 Comparable interface를 구현하기 때문
+
+- 정렬은 Comparable interface를 이용하여 이루어진다. List interface는 Comparable interface를 상속하므로 
+public interface Comparable<T> {
+public int comparaTo(T o);
+}
+•comparaTo() method는 매개변수 객체를 현재의 객체와 비교하여 작으면 음수, 같으면 0, 크면 양수를 반환
