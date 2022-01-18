@@ -1,0 +1,3 @@
+Amount of items in a list
+Inside the method, it is possible to influence the items in the parameter list. 
+In the following example, the method removeFirst --as the name suggests-- removes the first string from the list
