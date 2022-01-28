@@ -1,0 +1,29 @@
+print MyCalendar
+
+Current Calendar : a, Past Calendar : z, Exit : Enter
+a
+<Tday's date is 2022-01-28
+2022
+ =============== 1 ===============
+ Sun  Mon  Tue  Wed  Thu  Fri  Sat  
+   *    *    *    *    *    *    1 
+   2    3    4    5    6    7    8 
+   9   10   11   12   13   14   15 
+  16   17   18   19   20   21   22 
+  23   24   25   26   27   28   29 
+  30   31 
+
+Current Calendar : a, Past Calendar : z, Exit : Enter
+z
+Enter a year you want to print: 2018
+Enter a month you want to print: 12
+<Tday's date is 2022-01-28
+2018
+ =============== 12 ===============
+ Sun  Mon  Tue  Wed  Thu  Fri  Sat  
+   *    *    *    *    *    *    1 
+   2    3    4    5    6    7    8 
+   9   10   11   12   13   14   15 
+  16   17   18   19   20   21   22 
+  23   24   25   26   27   28   29 
+  30   31 
