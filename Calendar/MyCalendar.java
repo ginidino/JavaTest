@@ -27,8 +27,8 @@ public class MyCalendar {
 				buildCurrentCalendar();
 			} else if (input.equals("z")) {
 				int year = getYear();
-                int month = getMonth();
-                buildPastCalendar(year, month);
+                		int month = getMonth();
+                		buildPastCalendar(year, month);
 			} else {
 				System.out.println("Type again");
 				starter();
