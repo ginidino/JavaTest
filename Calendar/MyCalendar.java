@@ -11,7 +11,7 @@ public class MyCalendar {
 	
 	public static void main(String[] args) {
         cal.starter();
-    }
+    	}
 
 	public void starter() {
 		Scanner reader = new Scanner(System.in);
@@ -59,8 +59,8 @@ public class MyCalendar {
 	}
 	
 	public int[] getCurrent() {
-		Calendar cal = Calendar.getInstance();
-		int currentYear = cal.get(Calendar.YEAR);
+	Calendar cal = Calendar.getInstance();
+	int currentYear = cal.get(Calendar.YEAR);
         int currentMonth = cal.get(Calendar.MONTH) + 1;
         int[] currentYearMonth = {currentYear, currentMonth};
 		return currentYearMonth;
@@ -136,8 +136,8 @@ public class MyCalendar {
 	}
 	
 	public static void printCalendar(int year, int month, int dayMax, int dayWeek1) {
-		// print first day ~ maximum day of the month
-		System.out.println(year + "\n" + " =============== " + month + " ===============");
+	// print first day ~ maximum day of the month
+	System.out.println(year + "\n" + " =============== " + month + " ===============");
         System.out.println(" Sun  Mon  Tue  Wed  Thu  Fri  Sat  ");
         for (int i = 1; i < dayWeek1; i++) {
 			System.out.print("   * ");
