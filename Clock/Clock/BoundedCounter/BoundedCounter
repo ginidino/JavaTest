@@ -1,1 +1,36 @@
+Exercise78 is divided into 4 part
 
+Exercise78.1 is about BoundedCounter
+  * Implement class BoundedCounter with the following functionality:
+  
+  * A counter has an object variable that remembers the value of the counter. The value is within the range 0..upperBound
+  * In the beginning the value is 0.
+  * The upper bound of the value is defined by the constructor parameter.
+  * The method next increments the value of the counter. If the value would be more that the upper limit, it wraps around and becomes zero.
+  * The method toString returns a string representation of the counter value.
+  
+  * Note: cannot return an integer value directly from the method toString since the method should return a string. 
+          Integer variable value can be turned into a string by prefixing it with an empty string: "" + value.
+          
+  * In the constructor, an upper limit of 4 is given to the new counter object. Now, the value of the counter should be within the range 0...4. 
+    Note how the method next increases the value until it hits the upper limit and becomes zero again:
+
+Exercise78.2 is about Printing the initial zero
+  * Imrove toString so that if the value of the counter is less than 10, it prefixes the value with 0. 
+    If the value of the counter is e.g. 3, toString should produce "03". If the value is at least 10, e.g. 12, the returned string would be "12".
+  
+Exercise78.3 is about The first version of the clock
+  * With two counter objects it possible for us to build a simple clock. 
+    Hours can be represented by a counter with upper bound 23 and minutes by a counter with upper bound 59. 
+    As we all know, when minutes wrap around from 59 to 0, hours advance by one.
+  
+Exercise78.4 is about The second version of the clock
+  * Firstly implement the method setValue to the class BoundedCounter. 
+    The method should set the value of the parameter to the counter unless the parameter is less than zero or larger than the upper bound.
+    In those cases, the method does not have any effect.
+    
+Bonus: eternal clock
+  * Now, the clock goes on forever and the value is updated as it should be, once in a second. 
+    The clock estimates the duration of a second with the command Thread.sleep(1000); 
+    The parameter in the command is the time to sleep in milliseconds. In order to use the sleep command, 
+    you should do an addition to the definition of main: public static void main(String[] args) throws Exception {
