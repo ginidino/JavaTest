@@ -82,7 +82,7 @@ public class Grade {
 			System.out.print("*");
 		}
 		System.out.println("");
-        System.out.println("Acceptance percentage: " + accepted);
+        	System.out.println("Acceptance percentage: " + accepted);
 	}
 }
 //first version of Grade Distribution 
