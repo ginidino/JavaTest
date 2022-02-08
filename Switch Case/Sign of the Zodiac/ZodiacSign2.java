@@ -7,6 +7,8 @@ public class ZodiacSign2 {
 		Scanner reader = new Scanner(System.in);
 	
 		while(true) {
+			// When you enter your birthday date, make sure to enter it in 4 digits.
+			// ex) If your birthday date is January first, type 0101.
 			System.out.print("Type a your birthday date: ");
 			int date = Integer.parseInt(reader.nextLine());
 			int month = date / 100;
