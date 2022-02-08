@@ -1,0 +1,3 @@
+The difference of between ZodiacSign and ZodiacSign2 is the date input method. ZodiacSign requires entering months and days separately, 
+but in ZodiacSign2, even if the month and day are entered together, the sign of the zodiac corresponding to the date is output.
+
