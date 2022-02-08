@@ -3,7 +3,7 @@ package SwitchCase;
 import java.util.Scanner;
 
 // ZodiacSign2 made a code using switch case, and this file made by changing the switch case to an if-else loop.
-//switch to if else
+// switch to if else
 public class ZodiacSignifelse {
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
