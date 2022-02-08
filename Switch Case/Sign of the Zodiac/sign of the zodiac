@@ -1,2 +1,36 @@
 The difference of between ZodiacSign and ZodiacSign2 is the date input method. ZodiacSign requires entering months and days separately, 
 but in ZodiacSign2, even if the month and day are entered together, the sign of the zodiac corresponding to the date is output.
+
+------------------------------------------------------- Print Result -------------------------------------------------------
+Output of ZodiacSign
+
+Type a month: 3
+Type a day: 25
+Aries
+
+Type a month: 2
+Type a day: 7
+Aquarius
+
+Type a month: 12
+Type a day: 25
+Capricorn
+
+Type a month: 2
+Type a day: 27
+Pisces
+
+------------------------------------------------------------------------------------------------------------------------
+Output of ZodiacSign2
+
+Type a your birthday date: 0313
+Pisces
+
+Type a your birthday date: 0518
+Taurus
+
+Type a your birthday date: 1225
+Capricorn
+
+Type a your birthday date: 0623
+Cancer
