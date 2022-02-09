@@ -2,7 +2,7 @@ print MyCalendar
 
 Current Calendar : a, Past Calendar : z, Exit : Enter
 a
-<Tday's date is 2022-01-28
+<Tday's date is 2022-01-28>
 2022
  =============== 1 ===============
  Sun  Mon  Tue  Wed  Thu  Fri  Sat  
@@ -17,7 +17,7 @@ Current Calendar : a, Past Calendar : z, Exit : Enter
 z
 Enter a year you want to print: 2018
 Enter a month you want to print: 12
-<Tday's date is 2022-01-28
+<Tday's date is 2022-01-28>
 2018
  =============== 12 ===============
  Sun  Mon  Tue  Wed  Thu  Fri  Sat  
