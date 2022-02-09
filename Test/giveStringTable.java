@@ -9,8 +9,8 @@ public class Test6 {
 		String[] tchrs = new String[3];
 		
 		tchrs[0] = "Bonus";
-	  tchrs[1] = "Ihq";
-	  tchrs[2] = "Lennon";
+	  	tchrs[1] = "Ihq";
+	  	tchrs[2] = "Lennon";
 	    
 		return tchrs;
 	}
