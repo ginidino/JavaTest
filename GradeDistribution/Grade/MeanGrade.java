@@ -8,12 +8,12 @@ public class MeanGrade {
 		int[] grade = new int[4];
 		
 		for (int i = 0; i < grade.length; i++) {
-			System.out.println("enter your grade");
-			String input= reader.nextLine();
-			if (input.length() == 0) {
-				grade[i] = 0;
+			System.out.print("enter your grade: ");
+			String num= reader.nextLine();
+			if (num.isEmpty()) {
+				break;
 			} else {
-				grade[i] = Integer.parseInt(input);
+				grade[i] = Integer.parseInt(num);
 			}
 			
 			if (isValid(grade[i])==false) {
@@ -37,15 +37,11 @@ public class MeanGrade {
 		}
 	}
 	
-	public static double computeMean (int[] grade) {
+	public static double computeMean(int[] grade) {
 		int sum = 0;
-		int count = 0;
-		for (int i = 0; i < grade.length; i++) {
-			if (grade[i] >= 0 || grade[i] <= 100) {
-				sum += grade[i];
-				count++;
-			}
+		for (int num : grade) {
+			sum += num;
 		}
-		return (double) sum / count;
+		return (double) sum / grade.length;
 	}
 }
